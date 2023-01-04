@@ -24,7 +24,7 @@
 </head>
 
 <body style="padding:30px">
-  <h1> Nørdico Payment Setup </h1>
+  <h1> Soul Kitchen Payment Setup </h1>
   <h2> Amount (EUR): </h2>
 
   <input type="number" id="amtId" min="0" max="5000" step="0.01" required />
@@ -34,14 +34,14 @@
   <script>
     // Enter OpenNode INVOICE API key (first one) and preferred Fiat Currency
     // https://app.opennode.com/developers/integrations
-    const apiKey = 'de70f027-ea5a-466a-a1cd-be4e6314946f';
+    const apiKey = '8e3adfab-9cca-49bd-9852-26e69829ccc2';
 
     function makeInvoice() {
       const data = JSON.stringify({
         currency: 'EUR',
         auto_settle: true,
         amount: document.getElementById("amtId").value,
-        notif_email: 'ricardovaz.pt@gmail.com'
+        notif_email: 'fatiassilvestres@gmail.com'
       });
 
       const xhr = new XMLHttpRequest();
